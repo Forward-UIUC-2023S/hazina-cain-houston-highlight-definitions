@@ -63,8 +63,7 @@ This code finds definitions of user-supplied terms from a user-created corpus ma
 
 
 ### Important 
-Google backup is located here: [HazinaCain-Houston-HighlightDefinitions](https://drive.google.com/drive/folders/1PP561gneUiDLBy0N6tg3CsK2wCb0aMNK)
-Go to [our shared google Drive space](https://drive.google.com/drive/folders/1rxPAdGTVcl-Xo6uuFovdKcCw5_FEaXIC?usp=sharing) and create a folder with the format `FirstnameLastName-Projectname` (e.g. `AshutoshUkey-KeywordTrie`). In here, make sure to include a zipped copy of any data files related to your module (including `.sql` dumps of necessary databases) as well as a backup zipped copy of your Github repo (i.e. all the files you upload to Github).
+Google backup is located here: [HazinaCain-Houston-HighlightDefinitions](https://drive.google.com/file/d/15hcpdyszl-uOJHzPsK8ccralZK_bOFu-/view?usp=share_link)
 
 
 
@@ -85,6 +84,9 @@ Search
 
 ## Demo video
 A demo video is located [here](https://drive.google.com/file/d/1PqYTD9PPIu9duVjsF5Xk4swMjbOIluIn/view?usp=share_link).
+
+## Final report
+The final report describing this project is located [here](https://docs.google.com/document/d/1_M5KyQa4NnHKVzXZ_vfnwmaCThRpIHZk/edit?usp=share_link&ouid=115901294391800186181&rtpof=true&sd=true).
 
 
 ## Algorithmic Design
