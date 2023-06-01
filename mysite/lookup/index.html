@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Search Word Definitions</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'lookup/hilite.css' %}" />
+    <script src="{% static 'lookup/hilite.js' %}">
+        var these_defs = '{{ main_defs }}';
+    </script>
+
+</head>
+<body>
+
+    <input type="hidden" id="main_defs" name="variable_d" value="{{ main_defs }}">
+    <input type="hidden" id="main_sents" name="variable_s" value="{{ main_sents }}">
+    <input type="hidden" id="alt_words" name="variable_aw" value="{{ alt_words }}">
+    <input type="hidden" id="source" name="variable_sour" value="{{ source }}">
+
+    <h1>Search for a word</h1>
+    <br>   
+
+    <form name="formurl" id="formurl" method="post" action="">
+      <label for="searchbar">
+        Write the Wikipedia article name(s) (URL format) to scrape sentences
+        <br>
+        Format: en.wikipedia.org/wiki/<i>[ARTICLE_NAME]</i>
+        <br>
+        Term in text field should be * to get every URL starting in en.wikipedia.org/wiki/
+        <br>
+        Term in text field should be <i>[EG]</i>* to get every URL starting in en.wikipedia.org/wiki/<i>[EG]</i>
+        <br>
+        Build Corpus: 
+        </label>
+      <input type="text" id="corpusurl" name="corpusurl">
+      <input type="submit" value="Submit">
+    </form>
+    <form name="form" id="form" method="post" action="">
+      <br>
+      <br>
+      <label for="searchbar">Word: </label>
+      <input type="text" id="searchterm" name="searchterm"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    <p>Click on the submit button to search.</p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'tab_defs')" id="defaultOpen">Definitions</button>
+        <button class="tablinks" onclick="openTab(event, 'tab_similar')">Similar words</button>
+    </div>
+
+    <div id="tab_defs" class="tabcontent">
+        <ul id="defs">
+            <li>
+                <strong>Word:</strong> 
+                    {{ word }}
+            </li>
+            <li>
+                <strong>Source:</strong>
+                [[SOURCE_DEFS]]
+            </li>
+            <li>
+                <strong>Sentences:</strong>
+                <ul>
+                    [[DEFS]]
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <div id="tab_similar" class="tabcontent">
+        <ul id="alt_words_tab">
+            <li><strong>Related words:</strong>
+                <ul>
+                    [[ALT_WORDS]]
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+</body>
+</html>

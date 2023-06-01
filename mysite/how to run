@@ -1,0 +1,4 @@
+cd to directory
+python3 manage.py runserver 8080
+visit localhost:8080/poll
+

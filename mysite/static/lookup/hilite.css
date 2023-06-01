@@ -1,0 +1,53 @@
+/* hilite.css */
+
+/* Style header */
+h1 {
+    font-weight: normal;
+}
+
+/* Design tab bar */
+.tab {
+  overflow: hidden;
+  border: 2px solid #7bb8bd;
+  background-color: #c3dee0;
+}
+
+/* Design buttons on tab bar */
+.tab button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  float: left;
+  outline: none;
+  padding: 12px 16px;
+  transition: 0.5s;
+}
+
+/* Design color of hovering over buttons on tab bar */
+.tab button.hover {
+  background-color: #68aeb3;
+}
+
+/* Design color of active button on tab bar */
+.tab button.active {
+  background-color: #7bb8bd;
+}
+
+/* Design tab content */
+.tabcontent {
+  animation: fadeTabContent 0.5s;
+  border: 2px solid #7bb8bd;
+  border-top: none;
+  display: none;
+  padding: 5px 10px;
+}
+
+/* Declare animation of fade in for tab content */
+@keyframes fadeTabContent {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
