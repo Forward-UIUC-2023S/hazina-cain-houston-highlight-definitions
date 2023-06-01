@@ -1,0 +1,4 @@
+spacy==3.4.1
+whoosh==2.7.4
+beautifulsoup4==4.11.1
+googlesearch-python==1.2.3
