@@ -104,6 +104,7 @@ If no sentences match this format and contain the word in the subject, the secon
 If no sentences match the format above from Google results, then the user will be notified that no definitions were found.
 
 ![design architecture](https://github.com/Forward-UIUC-2023S/hazina-cain-houston-highlight-definitions/project-design.png)
+![design architecture](https://github.com/Forward-UIUC-2023S/hazina-cain-houston-highlight-definitions/blob/main/project-design.png)
 
 
 ## Issues and Future Work
